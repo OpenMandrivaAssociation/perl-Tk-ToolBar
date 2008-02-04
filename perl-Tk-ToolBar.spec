@@ -1,7 +1,7 @@
 
 %define realname   Tk-ToolBar
 %define version    0.09
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
@@ -14,8 +14,6 @@ Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
 BuildRequires: perl(Tk::CursorControl)
-
-BuildArch: noarch
 
 %description
 This module implements a dockable toolbar. It is in the same spirit as the
