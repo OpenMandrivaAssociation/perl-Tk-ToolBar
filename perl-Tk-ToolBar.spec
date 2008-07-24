@@ -1,7 +1,7 @@
 
 %define realname   Tk-ToolBar
 %define version    0.09
-%define release    %mkrel 2
+%define release    %mkrel 4
 
 Name:       perl-%{realname}
 Version:    %{version}
