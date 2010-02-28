@@ -1,5 +1,5 @@
-%define upstream_name   Tk-ToolBar
-%define upstream_version    0.09
+%define upstream_name    Tk-ToolBar
+%define upstream_version 0.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    A toolbar widget for Perl/Tk
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.zip
 
 BuildRequires: perl(Tk::CursorControl)
 BuildRequires: perl-devel
@@ -38,7 +38,6 @@ be embedded inside the second ToolBar. You can "un-embed" an embedded ToolBar
 simply by dragging it out. You can change the 15 pixel limit using the
 -close option.
 
-
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 
@@ -47,7 +46,7 @@ simply by dragging it out. You can change the 15 pixel limit using the
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -61,4 +60,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
