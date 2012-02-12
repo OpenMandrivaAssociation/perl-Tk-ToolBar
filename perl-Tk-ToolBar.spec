@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream
 
 BuildRequires: perl(Tk::CursorControl)
 BuildRequires: perl-devel
+BuildArch:	noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
