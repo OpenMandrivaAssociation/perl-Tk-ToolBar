@@ -1,20 +1,19 @@
-%define upstream_name    Tk-ToolBar
+%define upstream_name Tk-ToolBar
 %define upstream_version 0.10
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
 Release:	3
 
-Summary:    A toolbar widget for Perl/Tk
-License:    GPL+ or Artistic
-Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.zip
+Summary:	A toolbar widget for Perl/Tk
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.zip
 
-BuildRequires: perl(Tk::CursorControl)
-BuildRequires: perl-devel
+BuildRequires:	perl(Tk::CursorControl)
+BuildRequires:	perl-devel
 BuildArch:	noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module implements a dockable toolbar. It is in the same spirit as the
@@ -50,14 +49,9 @@ simply by dragging it out. You can change the 15 pixel limit using the
 %make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%{perl_vendorlib}/*
