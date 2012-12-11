@@ -55,3 +55,48 @@ simply by dragging it out. You can change the 15 pixel limit using the
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
+
+%changelog
+* Sun Feb 12 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.100.0-3
++ Revision: 773578
+- cleanout spec
+- package is noarch
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - rebuild for perl 5.12
+
+* Sun Feb 28 2010 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2010.1
++ Revision: 512613
+- update to
+
+* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.90.0-1mdv2010.0
++ Revision: 401499
+- rebuild using %%perl_convert_version
+- fixed license field
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.09-5mdv2009.0
++ Revision: 258659
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.09-4mdv2009.0
++ Revision: 246657
+- rebuild
+- fix description-line-too-long
+
+* Mon Feb 04 2008 Jérôme Quelin <jquelin@mandriva.org> 0.09-2mdv2008.1
++ Revision: 162066
+- binary module: removing noarch tag
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Nov 19 2007 Jérôme Quelin <jquelin@mandriva.org> 0.09-1mdv2008.1
++ Revision: 110511
+- import perl-Tk-ToolBar
+
+
