@@ -8,7 +8,7 @@ Release:	5
 Summary:	A toolbar widget for Perl/Tk
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.zip
 
 BuildRequires:	perl(Tk::CursorControl)
